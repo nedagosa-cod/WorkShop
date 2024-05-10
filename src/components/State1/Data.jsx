@@ -592,6 +592,131 @@ const Data = ({ data }) => {
             </video>
           </>
         )}
+
+        {$data == "checklistCol" && (
+          <>
+            <div className="data__title">
+              <h3
+                style={{
+                  textAlign: "center",
+                  color: "#323284",
+                  fontSize: "24px",
+                }}
+              >
+                Check List
+              </h3>
+            </div>
+            <p style={{ textAlign: "center" }}>
+              Permite organizar procesos de una gestión o atención telefónica de
+              asesores, analistas o gestores de servicio, enlistando y
+              organizando los pasos a realizar de una labor me manera grafica
+              rápida, fácil y sencilla, que permitirá garantizar la correcta
+              gestión, reduciendo formaciones de procesos repetitivos enfocados
+              a recordación.
+            </p>
+            <video controls className="video">
+              <source src="/checkCol.mp4" />
+            </video>
+          </>
+        )}
+        {$data == "tipologiasCol" && (
+          <>
+            <div className="data__title">
+              <h3
+                style={{
+                  textAlign: "center",
+                  color: "#323284",
+                  fontSize: "24px",
+                }}
+              >
+                Buscador de tipologías
+              </h3>
+            </div>
+            <p style={{ textAlign: "center" }}>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam et
+              nemo ad non temporibus pariatur delectus sit ipsum, odio voluptas
+              fugiat in commodi architecto ipsam nobis corporis illo laboriosam
+              vero?
+            </p>
+            <video controls className="video">
+              <source src="/tipologiasCol.mp4" />
+            </video>
+          </>
+        )}
+        {$data == "correctorCol" && (
+          <>
+            <div className="data__title">
+              <h3
+                style={{
+                  textAlign: "center",
+                  color: "#323284",
+                  fontSize: "24px",
+                }}
+              >
+                Corrector ortográfico
+              </h3>
+            </div>
+            <p style={{ textAlign: "center" }}>
+              Permite realizar una revisión sobre la información escrita
+              correctamente para operaciones sin paquetes de Office o alguna
+              herramienta que permita validar ortografía en línea, con el fin de
+              evitar errores de digitación en notas u otros procesos. Adicional
+              brinda ayudas de conectores para una mejor redacción.
+            </p>
+            <video controls className="video">
+              <source src="/tipologiasCol.mp4" />
+            </video>
+          </>
+        )}
+        {$data == "vozCol" && (
+          <>
+            <div className="data__title">
+              <h3
+                style={{
+                  textAlign: "center",
+                  color: "#323284",
+                  fontSize: "24px",
+                }}
+              >
+                Redactor de voz a texto
+              </h3>
+            </div>
+            <p style={{ textAlign: "center" }}>
+              Dentro del mismo corrector ortográfico viene incluida la opción de
+              poder realizar una grabación de el audio del asesor y pasarlo a
+              texto para así poder recuperar datos de la llamada o gestión que
+              este realizando.
+            </p>
+            <video controls className="video">
+              <source src="/tipologiasCol.mp4" />
+            </video>
+          </>
+        )}
+        {$data == "appsCol" && (
+          <>
+            <div className="data__title">
+              <h3
+                style={{
+                  textAlign: "center",
+                  color: "#323284",
+                  fontSize: "24px",
+                }}
+              >
+                Aplicativos Web
+              </h3>
+            </div>
+            <p style={{ textAlign: "center" }}>
+              Ingreso rápido y sencillo al total de aplicativos Web de la
+              operación o campaña, para una gestión completa con reducción en
+              los tiempos de atención. Adicional puede incluir usuarios y
+              contraseñas de herramientas o aplicativos que tengan acceso con
+              credenciales genéricas por medio de etiquetas.
+            </p>
+            <video controls className="video">
+              <source src="/appsCol.mp4" />
+            </video>
+          </>
+        )}
       </div>
     </section>
   );

@@ -121,6 +121,28 @@ $color-title: #fc7a95;
   cursor: pointer;
 }
 //
+// state 6
+.checklistCol {
+  grid-area: 7 / 2 / 9 / 7;
+  cursor: pointer;
+}
+.tipologiasCol {
+  grid-area: 7 / 7 / 9 / 12;
+  cursor: pointer;
+}
+.correctorCol {
+  grid-area: 10 / 2 / 12 / 7;
+  cursor: pointer;
+}
+.vozCol {
+  grid-area: 10 / 7 / 12 / 12;
+  cursor: pointer;
+}
+.appsCol {
+  grid-area: 13 / 4 / 15 / 10;
+  cursor: pointer;
+}
+//
 // state 7
 .correos {
   grid-area: 6 / 2 / 8 / 7;

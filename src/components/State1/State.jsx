@@ -153,6 +153,24 @@ const State = ({ state, getData }) => {
           <div className="faqCh" onClick={() => getData("faqChile")}></div>
         </>
       )}
+      {state == "state6" && (
+        <>
+          <div
+            className="checklistCol"
+            onClick={() => getData("checklistCol")}
+          ></div>
+          <div
+            className="tipologiasCol"
+            onClick={() => getData("tipologiasCol")}
+          ></div>
+          <div
+            className="correctorCol"
+            onClick={() => getData("correctorCol")}
+          ></div>
+          <div className="vozCol" onClick={() => getData("vozCol")}></div>
+          <div className="appsCol" onClick={() => getData("appsCol")}></div>
+        </>
+      )}
       {state == "state7" && (
         <>
           <div className="correos" onClick={() => getData("correos")}></div>
