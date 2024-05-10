@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100dvh;
+  //   background: red;
+}
+
+.map {
+  width: 768px;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: repeat(30, 1fr);
+
+  .state1 {
+    grid-area: 13 / 17 / 16 / 21;
+    background: red;
+    opacity: 0.5;
+  }
+  .state2 {
+    grid-area: 6 / 17 / 9 / 21;
+    opacity: 0.5;
+  }
+
+  .state3 {
+    grid-area: 9 / 11 / 12 / 15;
+    opacity: 0.5;
+  }
+
+  .state4 {
+    grid-area: 18 / 11 / 21 / 15;
+    opacity: 0.5;
+  }
+
+  .state5 {
+    grid-area: 22 / 8 / 25 / 11;
+    opacity: 0.5;
+  }
+
+  .state6 {
+    grid-area: 6 / 8 / 8 / 11;
+    opacity: 0.5;
+  }
+
+  .state7 {
+    grid-area: 14 / 1 / 17 / 5;
+    opacity: 0.5;
+  }
+
+  .state8 {
+    grid-area: 27 / 1 / 30 / 5;
+    opacity: 0.5;
+  }
+}
+
+.template {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: minmax(0, 10%) auto;
+}
+
+.state {
+  background: black;
+}
+
+.back-btn {
+  background: red;
+  opacity: 0.5;
+}
