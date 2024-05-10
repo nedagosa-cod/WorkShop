@@ -1,4 +1,3 @@
-import { useNavigate } from "react-router-dom";
 import imgMapa from "/salaMap.png";
 const Map = ({ getState }) => {
   const handleClick = (name) => {

@@ -6,10 +6,11 @@ import imgState4 from "/infoWebMexTel.png";
 import imgState5 from "/infoChile.png";
 import imgState7 from "/infoComing.png";
 import imgState8 from "/infoMetaverso.png";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
-const State = ({ state }) => {
+const State = ({ state, getData }) => {
   const navigate = useNavigate();
+  const [dataState, setDataState] = useState(state);
 
   const statesImages = {
     state1: imgState1,
@@ -21,14 +22,11 @@ const State = ({ state }) => {
     state7: imgState7,
     state8: imgState8,
   };
-  useEffect(() => {
-    console.log(state);
-  });
   return (
     <section
       className="template"
       style={{
-        backgroundImage: `url(${statesImages[state]})`,
+        backgroundImage: `url(${statesImages[dataState]})`,
         backgroundSize: "100% 100%",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
@@ -37,6 +35,12 @@ const State = ({ state }) => {
       }}
     >
       <div className="back-btn" onClick={() => navigate(-1)}></div>
+      {state == "state3" && (
+        <>
+          <div className="agile" onClick={() => getData("agile")}></div>
+          <div className="simulator"></div>
+        </>
+      )}
     </section>
   );
 };

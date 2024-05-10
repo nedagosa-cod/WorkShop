@@ -1,3 +1,5 @@
+$color-title: #fc7a95;
+
 * {
   margin: 0;
   padding: 0;
@@ -9,7 +11,9 @@
   align-items: center;
   width: 100%;
   height: 100dvh;
-  //   background: red;
+  font-family: "Freeman", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .map {
@@ -18,10 +22,11 @@
   display: grid;
   grid-template-columns: repeat(20, 1fr);
   grid-template-rows: repeat(30, 1fr);
-
+  .state {
+    cursor: pointer;
+  }
   .state1 {
     grid-area: 13 / 17 / 16 / 21;
-    background: red;
     opacity: 0.5;
   }
   .state2 {
@@ -62,15 +67,100 @@
 
 .template {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: minmax(0, 10%) auto;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(20, 1fr);
 }
-
-.state {
-  background: black;
+//state 3
+.agile {
+  grid-area: 9 / 4 / 11 / 10;
+  cursor: pointer;
 }
+.simulator {
+  grid-area: 13 / 4 / 15 / 10;
+  cursor: pointer;
+}
+//
+.canva {
+  grid-area: 3 / 3 / 18 / 11;
+  overflow-y: auto;
+  scrollbar-width: none;
+  //   background: rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  & .data__title {
+    & h2 {
+      color: $color-title;
+      font-size: 60px;
+    }
+  }
 
+  & .card {
+    width: 100%;
+    padding: 6px;
+    background: #76c8ff;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    backdrop-filter: blur(10px);
+    transition: 0.5s ease-in-out;
+    & .img {
+      width: 80px;
+      height: 50px;
+      margin-left: 10px;
+      border-radius: 10px;
+      background: linear-gradient(#d7cfcf, #9198e5);
+    }
+    & .textBox {
+      margin-left: 10px;
+      color: black;
+    }
+    & .textContent {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    & .h1 {
+      font-size: 18px;
+      font-weight: bold;
+    }
+    & .p {
+      font-size: 16px;
+      font-weight: lighter;
+    }
+  }
+
+  & .main__scroll-box {
+    animation: scroll-down 1s infinite;
+    -webkit-animation: scroll-down 1s infinite;
+  }
+  & .video {
+    width: 100%;
+    border: 6px groove $color-title;
+    margin: 18px auto;
+  }
+}
 .back-btn {
-  background: red;
-  opacity: 0.5;
+  grid-area: 1 / 1 / 3 / 3;
+  cursor: pointer;
+}
+
+@keyframes scroll-down {
+  0%,
+  100% {
+    transform: translateY(0rem);
+    opacity: 1;
+  }
+
+  35% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+
+  70% {
+    transform: translateY(-1rem);
+    opacity: 0;
+  }
 }
