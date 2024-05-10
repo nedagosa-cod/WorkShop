@@ -199,6 +199,32 @@ const Data = ({ data }) => {
             </video>
           </>
         )}
+        {$data == "checkMex" && (
+          <>
+            <div className="data__title">
+              <h3
+                style={{
+                  textAlign: "center",
+                  color: "#323284",
+                  fontSize: "24px",
+                }}
+              >
+                Checklist
+              </h3>
+            </div>
+            <p style={{ textAlign: "center" }}>
+              Permite organizar procesos de una gestión o atención telefónica de
+              asesores, analistas o gestores de servicio, enlistando y
+              organizando los pasos a realizar de una labor me manera grafica
+              rápida, fácil y sencilla, que permitirá garantizar la correcta
+              gestión, reduciendo formaciones de procesos repetitivos enfocados
+              a recordación.
+            </p>
+            <video controls className="video">
+              <source src="/checkMex.mp4" />
+            </video>
+          </>
+        )}
       </div>
     </section>
   );

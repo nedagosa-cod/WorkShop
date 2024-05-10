@@ -100,6 +100,14 @@ const State = ({ state, getData }) => {
           </ul>
         </div>
       )}
+      {state == "state4" && (
+        <>
+          <div className="checks" onClick={() => getData("checkMex")}></div>
+          <div className="voz"></div>
+          <div className="corrector"></div>
+          <div className="scripts"></div>
+        </>
+      )}
     </section>
   );
 };

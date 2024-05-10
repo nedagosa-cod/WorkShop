@@ -70,6 +70,7 @@ $color-title: #fc7a95;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(20, 1fr);
 }
+
 //state 3
 .agile {
   grid-area: 9 / 4 / 11 / 10;
@@ -77,6 +78,24 @@ $color-title: #fc7a95;
 }
 .simulator {
   grid-area: 13 / 4 / 15 / 10;
+  cursor: pointer;
+}
+//
+//state 4
+.checks {
+  grid-area: 6 / 4 / 8 / 10;
+  cursor: pointer;
+}
+.voz {
+  grid-area: 9 / 4 / 11 / 10;
+  cursor: pointer;
+}
+.corrector {
+  grid-area: 12 / 4 / 14 / 10;
+  cursor: pointer;
+}
+.scripts {
+  grid-area: 15 / 4 / 17 / 10;
   cursor: pointer;
 }
 //
