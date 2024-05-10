@@ -386,12 +386,10 @@ const Data = ({ data }) => {
               </h3>
             </div>
             <p style={{ textAlign: "center" }}>
-              Permite organizar procesos de una gestión o atención telefónica de
-              asesores, analistas o gestores de servicio, enlistando y
-              organizando los pasos a realizar de una labor me manera grafica
-              rápida, fácil y sencilla, que permitirá garantizar la correcta
-              gestión, reduciendo formaciones de procesos repetitivos enfocados
-              a recordación.
+              Cojunto de elementos unificados de informacion relacionada a un
+              producto o servicio el cual le facilita al asesor encontrar la
+              información de manera inmedia, o bucarla por algún código
+              identificador.
             </p>
             <video controls className="video">
               <source src="/catalogo.mp4" />
@@ -412,15 +410,62 @@ const Data = ({ data }) => {
               </h3>
             </div>
             <p style={{ textAlign: "center" }}>
-              Permite organizar procesos de una gestión o atención telefónica de
-              asesores, analistas o gestores de servicio, enlistando y
-              organizando los pasos a realizar de una labor me manera grafica
-              rápida, fácil y sencilla, que permitirá garantizar la correcta
-              gestión, reduciendo formaciones de procesos repetitivos enfocados
-              a recordación.
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto
+              cupiditate eveniet ex unde magnam qui, inventore praesentium. Ad
+              vel placeat corrupti porro doloribus voluptatum, inventore libero,
+              possimus necessitatibus est nihil.
             </p>
             <video controls className="video">
-              <source src="/catalogo.mp4" />
+              <source src="/macros.mp4" />
+            </video>
+          </>
+        )}
+        {$data == "apps" && (
+          <>
+            <div className="data__title">
+              <h3
+                style={{
+                  textAlign: "center",
+                  color: "#323284",
+                  fontSize: "24px",
+                }}
+              >
+                Aplicativos Web
+              </h3>
+            </div>
+            <p style={{ textAlign: "center" }}>
+              Ingreso rápido y sencillo al total de aplicativos Web de la
+              operación o campaña, para una gestión completa con reducción en
+              los tiempos de atención. Adicional puede incluir usuarios y
+              contraseñas de herramientas o aplicativos que tengan acceso con
+              credenciales genéricas por medio de etiquetas.
+            </p>
+            <video controls className="video">
+              <source src="/apps.mp4" />
+            </video>
+          </>
+        )}
+        {$data == "segmentador" && (
+          <>
+            <div className="data__title">
+              <h3
+                style={{
+                  textAlign: "center",
+                  color: "#323284",
+                  fontSize: "24px",
+                }}
+              >
+                Segmentador
+              </h3>
+            </div>
+            <p style={{ textAlign: "center" }}>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam et
+              nemo ad non temporibus pariatur delectus sit ipsum, odio voluptas
+              fugiat in commodi architecto ipsam nobis corporis illo laboriosam
+              vero?
+            </p>
+            <video controls className="video">
+              <source src="/segmentador.mp4" />
             </video>
           </>
         )}
