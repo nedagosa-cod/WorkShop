@@ -44,7 +44,7 @@ const State = ({ state, getData }) => {
       {state == "state8" && (
         <div className="canva">
           <video controls className="video" style={{ marginTop: "40%" }}>
-            <source src="/agile.mp4" />
+            <source src="/meta.mp4" />
           </video>
         </div>
       )}
