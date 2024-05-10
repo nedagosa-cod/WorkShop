@@ -99,6 +99,40 @@ $color-title: #fc7a95;
   cursor: pointer;
 }
 //
+// state 7
+.correos {
+  grid-area: 6 / 2 / 8 / 7;
+  cursor: pointer;
+}
+.tipificador {
+  grid-area: 9 / 2 / 11 / 7;
+  cursor: pointer;
+}
+.flujos {
+  grid-area: 12 / 2 / 14 / 7;
+  cursor: pointer;
+}
+.apps {
+  grid-area: 15 / 2 / 17 / 7;
+  cursor: pointer;
+}
+.calculadora {
+  grid-area: 6 / 7 / 8 / 12;
+  cursor: pointer;
+}
+.catalago {
+  grid-area: 9 / 7 / 11 / 12;
+  cursor: pointer;
+}
+.macros {
+  grid-area: 12 / 7 / 14 / 12;
+  cursor: pointer;
+}
+.segmentador {
+  grid-area: 15 / 7 / 17 / 12;
+  cursor: pointer;
+}
+//
 .canva {
   grid-area: 3 / 2 / 18 / 12;
   overflow-y: auto;

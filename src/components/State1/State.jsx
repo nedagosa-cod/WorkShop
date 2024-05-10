@@ -36,19 +36,6 @@ const State = ({ state, getData }) => {
       }}
     >
       <div className="back-btn" onClick={() => navigate(-1)}></div>
-      {state == "state3" && (
-        <>
-          <div className="agile" onClick={() => getData("agile")}></div>
-          <div className="simulator" onClick={() => getData("simulator")}></div>
-        </>
-      )}
-      {state == "state8" && (
-        <div className="canva">
-          <video controls className="video" style={{ marginTop: "40%" }}>
-            <source src="/meta.mp4" />
-          </video>
-        </div>
-      )}
       {state == "state1" && (
         <div className="canva" style={{ textAlign: "center" }}>
           <div
@@ -100,13 +87,50 @@ const State = ({ state, getData }) => {
           </ul>
         </div>
       )}
+      {state == "state3" && (
+        <>
+          <div className="agile" onClick={() => getData("agile")}></div>
+          <div className="simulator" onClick={() => getData("simulator")}></div>
+        </>
+      )}
       {state == "state4" && (
         <>
           <div className="checks" onClick={() => getData("checkMex")}></div>
-          <div className="voz"></div>
-          <div className="corrector"></div>
-          <div className="scripts"></div>
+          <div className="voz" onClick={() => getData("vozMex")}></div>
+          <div
+            className="corrector"
+            onClick={() => getData("correctorMex")}
+          ></div>
+          <div className="scripts" onClick={() => getData("scriptsMex")}></div>
         </>
+      )}
+      {state == "state7" && (
+        <>
+          <div className="correos" onClick={() => getData("correos")}></div>
+          <div
+            className="calculadora"
+            onClick={() => getData("calculadora")}
+          ></div>
+          <div
+            className="tipificador"
+            onClick={() => getData("tipificador")}
+          ></div>
+          <div className="catalago" onClick={() => getData("catalago")}></div>
+          <div className="flujos" onClick={() => getData("flujos")}></div>
+          <div className="macros" onClick={() => getData("macros")}></div>
+          <div className="apps" onClick={() => getData("apps")}></div>
+          <div
+            className="segmentador"
+            onClick={() => getData("segmentador")}
+          ></div>
+        </>
+      )}
+      {state == "state8" && (
+        <div className="canva">
+          <video controls className="video" style={{ marginTop: "40%" }}>
+            <source src="/meta.mp4" />
+          </video>
+        </div>
       )}
     </section>
   );

@@ -225,6 +225,78 @@ const Data = ({ data }) => {
             </video>
           </>
         )}
+        {$data == "vozMex" && (
+          <>
+            <div className="data__title">
+              <h3
+                style={{
+                  textAlign: "center",
+                  color: "#323284",
+                  fontSize: "24px",
+                }}
+              >
+                Redactor de voz a texto
+              </h3>
+            </div>
+            <p style={{ textAlign: "center" }}>
+              Con el corrector ortográfico viene incluida la funcionalidad de
+              poder realizar una grabación de el audio del asesor y pasarlo a
+              texto para así poder recuperar datos de la llamada o gestión que
+              este realizando.
+            </p>
+            <video controls className="video">
+              <source src="/vozMex.mp4" />
+            </video>
+          </>
+        )}
+        {$data == "correctorMex" && (
+          <>
+            <div className="data__title">
+              <h3
+                style={{
+                  textAlign: "center",
+                  color: "#323284",
+                  fontSize: "24px",
+                }}
+              >
+                Corrector ortográfico
+              </h3>
+            </div>
+            <p style={{ textAlign: "center" }}>
+              Permite realizar una revisión sobre la información escrita
+              correctamente para operaciones sin paquetes de Office o alguna
+              herramienta que permita validar ortografía en línea, con el fin de
+              evitar errores de digitación en notas u otros procesos
+            </p>
+            <video controls className="video">
+              <source src="/correctorMex.mp4" />
+            </video>
+          </>
+        )}
+        {$data == "scriptsMex" && (
+          <>
+            <div className="data__title">
+              <h3
+                style={{
+                  textAlign: "center",
+                  color: "#323284",
+                  fontSize: "24px",
+                }}
+              >
+                Scripts
+              </h3>
+            </div>
+            <p style={{ textAlign: "center" }}>
+              Permite realizar una revisión sobre la información escrita
+              correctamente para operaciones sin paquetes de Office o alguna
+              herramienta que permita validar ortografía en línea, con el fin de
+              evitar errores de digitación en notas u otros procesos
+            </p>
+            <video controls className="video">
+              <source src="/scriptsMex.mp4" />
+            </video>
+          </>
+        )}
       </div>
     </section>
   );
