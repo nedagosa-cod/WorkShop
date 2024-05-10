@@ -182,7 +182,13 @@ const Data = ({ data }) => {
             <div className="data__title">
               <h2>Simulator</h2>
             </div>
-            <p>
+            <p
+              style={{
+                textAlign: "center",
+                fontSize: "18px",
+                fontWeight: "600",
+              }}
+            >
               Con Simulator, llevamos la prueba de aplicativos al siguiente
               nivel. Nuestra innovadora plataforma crea simuladores de
               aplicativos personalizados, proporcionando un entorno de prueba
