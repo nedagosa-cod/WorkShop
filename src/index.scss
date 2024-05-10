@@ -81,9 +81,7 @@ $color-title: #fc7a95;
 }
 //
 .canva {
-  position: relative;
-  top: -10%;
-  grid-area: 3 / 3 / 18 / 11;
+  grid-area: 3 / 2 / 18 / 12;
   overflow-y: auto;
   scrollbar-width: none;
   //   background: rgba(0, 0, 0, 0.1);

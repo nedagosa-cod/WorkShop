@@ -160,7 +160,7 @@ const Data = ({ data }) => {
               vive
               {/* <iframe src="/agile.mp4" frameborder="0" loading="lazy"></iframe> */}
             </video>
-            <div className="main__action">
+            {/* <div className="main__action">
               <div className="main__scroll">
                 <div className="main__scroll-box">
                   <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -174,7 +174,7 @@ const Data = ({ data }) => {
 
                 <span className="main__scroll-text">---------</span>
               </div>
-            </div>
+            </div> */}
           </>
         )}
       </div>
