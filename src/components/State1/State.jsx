@@ -4,6 +4,7 @@ import imgState2 from "/infoCalidad.png";
 import imgState3 from "/infoAgiSim.png";
 import imgState4 from "/infoWebMexTel.png";
 import imgState5 from "/infoChile.png";
+import imgState6 from "/infoColombia.png";
 import imgState7 from "/infoComing.png";
 import imgState8 from "/infoMetaverso.png";
 import { useEffect, useState } from "react";
@@ -18,7 +19,7 @@ const State = ({ state, getData }) => {
     state3: imgState3,
     state4: imgState4,
     state5: imgState5,
-    state6: "/state6.png",
+    state6: imgState6,
     state7: imgState7,
     state8: imgState8,
   };
