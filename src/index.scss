@@ -99,6 +99,28 @@ $color-title: #fc7a95;
   cursor: pointer;
 }
 //
+// state 5
+.arbolCh {
+  grid-area: 7 / 3 / 9 / 7;
+  cursor: pointer;
+}
+.notasCh {
+  grid-area: 7 / 8 / 9 / 12;
+  cursor: pointer;
+}
+.calcCh {
+  grid-area: 10 / 3 / 12 / 7;
+  cursor: pointer;
+}
+.scriptsCh {
+  grid-area: 10 / 8 / 12 / 12;
+  cursor: pointer;
+}
+.faqCh {
+  grid-area: 13 / 4 / 15 / 10;
+  cursor: pointer;
+}
+//
 // state 7
 .correos {
   grid-area: 6 / 2 / 8 / 7;

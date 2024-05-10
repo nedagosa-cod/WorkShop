@@ -311,10 +311,10 @@ const Data = ({ data }) => {
               </h3>
             </div>
             <p style={{ textAlign: "center" }}>
-              Permite realizar una revisión sobre la información escrita
-              correctamente para operaciones sin paquetes de Office o alguna
-              herramienta que permita validar ortografía en línea, con el fin de
-              evitar errores de digitación en notas u otros procesos
+              Permite al asesor estructurar, organizar, representar
+              conocimientos y procesos que facilitan el análisis del mismo
+              mejorando tiempos en retroalimentaciones y errores
+              de comunicación.
             </p>
             <video controls className="video">
               <source src="/flujos.mp4" />
@@ -410,10 +410,11 @@ const Data = ({ data }) => {
               </h3>
             </div>
             <p style={{ textAlign: "center" }}>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto
-              cupiditate eveniet ex unde magnam qui, inventore praesentium. Ad
-              vel placeat corrupti porro doloribus voluptatum, inventore libero,
-              possimus necessitatibus est nihil.
+              Permite seleccionar información en base al flujo principal que se
+              requiera, cada macro comparte encabezados iguales (Aclaración,
+              Tipología, etc.) Mas tienen plantillas diferentes para completar
+              cierta información dependiendo el caso o casos múltiples que
+              contemple la macro.
             </p>
             <video controls className="video">
               <source src="/macros.mp4" />
@@ -459,13 +460,135 @@ const Data = ({ data }) => {
               </h3>
             </div>
             <p style={{ textAlign: "center" }}>
+              Permite segmentar la información dependiendo del proceso que se
+              realice, mostrando diversos casos que se pueden presentar en
+              operación y el respectivo manejo que se le debe dar a cada uno,
+              para que el asesor pueda darle la información pertinente al
+              cliente y así mismo tomar los datos que se consideren necesarios
+              para culminar el proceso.
+            </p>
+            <video controls className="video">
+              <source src="/segmentador.mp4" />
+            </video>
+          </>
+        )}
+        {$data == "transferChile" && (
+          <>
+            <div className="data__title">
+              <h3
+                style={{
+                  textAlign: "center",
+                  color: "#323284",
+                  fontSize: "24px",
+                }}
+              >
+                Arbol de transfeerencias
+              </h3>
+            </div>
+            <p style={{ textAlign: "center" }}>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam et
               nemo ad non temporibus pariatur delectus sit ipsum, odio voluptas
               fugiat in commodi architecto ipsam nobis corporis illo laboriosam
               vero?
             </p>
             <video controls className="video">
-              <source src="/segmentador.mp4" />
+              <source src="/arbolCh.mp4" />
+            </video>
+          </>
+        )}
+        {$data == "notasChile" && (
+          <>
+            <div className="data__title">
+              <h3
+                style={{
+                  textAlign: "center",
+                  color: "#323284",
+                  fontSize: "24px",
+                }}
+              >
+                Gestor de notas
+              </h3>
+            </div>
+            <p style={{ textAlign: "center" }}>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam et
+              nemo ad non temporibus pariatur delectus sit ipsum, odio voluptas
+              fugiat in commodi architecto ipsam nobis corporis illo laboriosam
+              vero?
+            </p>
+            <video controls className="video">
+              <source src="/notasCh.mp4" />
+            </video>
+          </>
+        )}
+        {$data == "calculadoraChile" && (
+          <>
+            <div className="data__title">
+              <h3
+                style={{
+                  textAlign: "center",
+                  color: "#323284",
+                  fontSize: "24px",
+                }}
+              >
+                Calculadora
+              </h3>
+            </div>
+            <p style={{ textAlign: "center" }}>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam et
+              nemo ad non temporibus pariatur delectus sit ipsum, odio voluptas
+              fugiat in commodi architecto ipsam nobis corporis illo laboriosam
+              vero?
+            </p>
+            <video controls className="video">
+              <source src="/calcCh.mp4" />
+            </video>
+          </>
+        )}
+        {$data == "scriptsChile" && (
+          <>
+            <div className="data__title">
+              <h3
+                style={{
+                  textAlign: "center",
+                  color: "#323284",
+                  fontSize: "24px",
+                }}
+              >
+                Scripts
+              </h3>
+            </div>
+            <p style={{ textAlign: "center" }}>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam et
+              nemo ad non temporibus pariatur delectus sit ipsum, odio voluptas
+              fugiat in commodi architecto ipsam nobis corporis illo laboriosam
+              vero?
+            </p>
+            <video controls className="video">
+              <source src="/scriptsCh.mp4" />
+            </video>
+          </>
+        )}
+        {$data == "faqChile" && (
+          <>
+            <div className="data__title">
+              <h3
+                style={{
+                  textAlign: "center",
+                  color: "#323284",
+                  fontSize: "24px",
+                }}
+              >
+                Preguntas Frecuentes
+              </h3>
+            </div>
+            <p style={{ textAlign: "center" }}>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam et
+              nemo ad non temporibus pariatur delectus sit ipsum, odio voluptas
+              fugiat in commodi architecto ipsam nobis corporis illo laboriosam
+              vero?
+            </p>
+            <video controls className="video">
+              <source src="/faqCh.mp4" />
             </video>
           </>
         )}

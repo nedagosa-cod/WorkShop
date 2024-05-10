@@ -104,6 +104,24 @@ const State = ({ state, getData }) => {
           <div className="scripts" onClick={() => getData("scriptsMex")}></div>
         </>
       )}
+      {state == "state5" && (
+        <>
+          <div
+            className="arbolCh"
+            onClick={() => getData("transferChile")}
+          ></div>
+          <div className="notasCh" onClick={() => getData("notasChile")}></div>
+          <div
+            className="calcCh"
+            onClick={() => getData("calculadoraChile")}
+          ></div>
+          <div
+            className="scriptsCh"
+            onClick={() => getData("scriptsChile")}
+          ></div>
+          <div className="faqCh" onClick={() => getData("faqChile")}></div>
+        </>
+      )}
       {state == "state7" && (
         <>
           <div className="correos" onClick={() => getData("correos")}></div>
