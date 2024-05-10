@@ -11,8 +11,8 @@ $color-title: #fc7a95;
   align-items: center;
   width: 100%;
   height: 100dvh;
-  font-family: "Freeman", sans-serif;
-  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
   font-style: normal;
 }
 
@@ -81,6 +81,8 @@ $color-title: #fc7a95;
 }
 //
 .canva {
+  position: relative;
+  top: -10%;
   grid-area: 3 / 3 / 18 / 11;
   overflow-y: auto;
   scrollbar-width: none;
@@ -91,13 +93,14 @@ $color-title: #fc7a95;
   gap: 12px;
   & .data__title {
     & h2 {
+      text-align: center;
       color: $color-title;
       font-size: 60px;
     }
   }
 
   & .card {
-    width: 100%;
+    min-width: 100%;
     padding: 6px;
     background: #76c8ff;
     border-radius: 20px;
@@ -129,15 +132,18 @@ $color-title: #fc7a95;
       justify-content: space-between;
     }
     & .h1 {
-      font-size: 18px;
+      font-size: 14px;
       font-weight: bold;
+      text-align: center;
     }
     & .p {
-      font-size: 16px;
+      font-size: 14px;
       font-weight: lighter;
     }
   }
-
+  .main__scroll-text {
+    color: transparent;
+  }
   & .main__scroll-box {
     animation: scroll-down 1s infinite;
     -webkit-animation: scroll-down 1s infinite;

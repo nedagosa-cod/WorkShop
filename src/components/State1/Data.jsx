@@ -155,6 +155,11 @@ const Data = ({ data }) => {
                 <div></div>
               </div>
             </div>
+            <video controls className="video">
+              <source src="/agile.mp4" />
+              vive
+              {/* <iframe src="/agile.mp4" frameborder="0" loading="lazy"></iframe> */}
+            </video>
             <div className="main__action">
               <div className="main__scroll">
                 <div className="main__scroll-box">
@@ -167,14 +172,9 @@ const Data = ({ data }) => {
                   </svg>
                 </div>
 
-                <span className="main__scroll-text">Ver video</span>
+                <span className="main__scroll-text">---------</span>
               </div>
             </div>
-            <video controls className="video">
-              <source src="/agile.mp4" />
-              vive
-              {/* <iframe src="/agile.mp4" frameborder="0" loading="lazy"></iframe> */}
-            </video>
           </>
         )}
       </div>
