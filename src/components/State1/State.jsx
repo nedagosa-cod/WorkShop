@@ -41,6 +41,13 @@ const State = ({ state, getData }) => {
           <div className="simulator"></div>
         </>
       )}
+      {state == "state8" && (
+        <div className="canva">
+          <video controls className="video" style={{ marginTop: "40%" }}>
+            <source src="/agile.mp4" />
+          </video>
+        </div>
+      )}
     </section>
   );
 };
