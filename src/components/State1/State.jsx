@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import imgState1 from "/clean.png";
-import imgState2 from "/infoCalidad.png";
+import imgState2 from "/clean.png";
 import imgState3 from "/infoAgiSim.png";
 import imgState4 from "/infoWebMexTel.png";
 import imgState5 from "/infoChile.png";
@@ -85,6 +85,37 @@ const State = ({ state, getData }) => {
               implementadas.
             </li>
           </ul>
+        </div>
+      )}
+      {state == "state2" && (
+        <div className="canva" style={{ textAlign: "center" }}>
+          <div
+            className="data__title"
+            style={{ textAlign: "center", marginBottom: "30px" }}
+          >
+            <h2>Calidad</h2>
+            <span style={{ color: "#323284", fontWeight: "bold" }}>
+              Sales, excellence, Customer experience
+            </span>
+          </div>
+          <span
+            style={{
+              fontWeight: "bold",
+              backgroundColor: "#323284",
+              color: "white",
+              padding: "10px",
+              borderRadius: "5px",
+            }}
+          >
+            Nuevas estrategias para el acompañamiento de las operaciones
+          </span>
+          <figure style={{ width: "100%" }}>
+            <img
+              src="/calidad2.png"
+              alt="calidad"
+              style={{ width: "100%", height: "auto" }}
+            />
+          </figure>
         </div>
       )}
       {state == "state3" && (
