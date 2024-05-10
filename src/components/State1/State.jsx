@@ -109,13 +109,13 @@ const State = ({ state, getData }) => {
           <div className="correos" onClick={() => getData("correos")}></div>
           <div
             className="calculadora"
-            onClick={() => getData("calculadora")}
+            onClick={() => getData("calculadoras")}
           ></div>
           <div
             className="tipificador"
             onClick={() => getData("tipificador")}
           ></div>
-          <div className="catalago" onClick={() => getData("catalago")}></div>
+          <div className="catalago" onClick={() => getData("catalogo")}></div>
           <div className="flujos" onClick={() => getData("flujos")}></div>
           <div className="macros" onClick={() => getData("macros")}></div>
           <div className="apps" onClick={() => getData("apps")}></div>

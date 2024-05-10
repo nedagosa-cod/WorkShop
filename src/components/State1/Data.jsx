@@ -297,6 +297,133 @@ const Data = ({ data }) => {
             </video>
           </>
         )}
+        {$data == "flujos" && (
+          <>
+            <div className="data__title">
+              <h3
+                style={{
+                  textAlign: "center",
+                  color: "#323284",
+                  fontSize: "24px",
+                }}
+              >
+                Flujogramas
+              </h3>
+            </div>
+            <p style={{ textAlign: "center" }}>
+              Permite realizar una revisión sobre la información escrita
+              correctamente para operaciones sin paquetes de Office o alguna
+              herramienta que permita validar ortografía en línea, con el fin de
+              evitar errores de digitación en notas u otros procesos
+            </p>
+            <video controls className="video">
+              <source src="/flujos.mp4" />
+            </video>
+          </>
+        )}
+        {$data == "calculadoras" && (
+          <>
+            <div className="data__title">
+              <h3
+                style={{
+                  textAlign: "center",
+                  color: "#323284",
+                  fontSize: "24px",
+                }}
+              >
+                Calculadoras
+              </h3>
+            </div>
+            <p style={{ textAlign: "center" }}>
+              Permiten realizar los diferentes cálculos en la gestión de ventas,
+              cobros, ajustes, descuentos y facturación, parametrizando los
+              campos de diligenciamiento, con una visualización intuitiva de
+              fácil uso para un resultado correcto en los cálculos.
+            </p>
+            <video controls className="video">
+              <source src="/calculadora1.mp4" />
+            </video>
+            <video controls className="video">
+              <source src="/calculadora2.mp4" />
+            </video>
+          </>
+        )}
+        {$data == "tipificador" && (
+          <>
+            <div className="data__title">
+              <h3
+                style={{
+                  textAlign: "center",
+                  color: "#323284",
+                  fontSize: "24px",
+                }}
+              >
+                Tipificador
+              </h3>
+            </div>
+            <p style={{ textAlign: "center" }}>
+              Permite segmentar información que va relacionada una detrás de
+              otra ayudando el asesor a evitar marcaciones incorrectas ya que
+              los campos se encuentran parametrizados para mostrar solo la
+              información relacionada a la gestión del asesor.
+            </p>
+            <video controls className="video">
+              <source src="/tipificador.mp4" />
+            </video>
+          </>
+        )}
+        {$data == "catalogo" && (
+          <>
+            <div className="data__title">
+              <h3
+                style={{
+                  textAlign: "center",
+                  color: "#323284",
+                  fontSize: "24px",
+                }}
+              >
+                Catalogo
+              </h3>
+            </div>
+            <p style={{ textAlign: "center" }}>
+              Permite organizar procesos de una gestión o atención telefónica de
+              asesores, analistas o gestores de servicio, enlistando y
+              organizando los pasos a realizar de una labor me manera grafica
+              rápida, fácil y sencilla, que permitirá garantizar la correcta
+              gestión, reduciendo formaciones de procesos repetitivos enfocados
+              a recordación.
+            </p>
+            <video controls className="video">
+              <source src="/catalogo.mp4" />
+            </video>
+          </>
+        )}
+        {$data == "macros" && (
+          <>
+            <div className="data__title">
+              <h3
+                style={{
+                  textAlign: "center",
+                  color: "#323284",
+                  fontSize: "24px",
+                }}
+              >
+                Macros
+              </h3>
+            </div>
+            <p style={{ textAlign: "center" }}>
+              Permite organizar procesos de una gestión o atención telefónica de
+              asesores, analistas o gestores de servicio, enlistando y
+              organizando los pasos a realizar de una labor me manera grafica
+              rápida, fácil y sencilla, que permitirá garantizar la correcta
+              gestión, reduciendo formaciones de procesos repetitivos enfocados
+              a recordación.
+            </p>
+            <video controls className="video">
+              <source src="/catalogo.mp4" />
+            </video>
+          </>
+        )}
       </div>
     </section>
   );
