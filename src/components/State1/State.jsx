@@ -39,7 +39,7 @@ const State = ({ state, getData }) => {
       {state == "state3" && (
         <>
           <div className="agile" onClick={() => getData("agile")}></div>
-          <div className="simulator"></div>
+          <div className="simulator" onClick={() => getData("simulator")}></div>
         </>
       )}
       {state == "state8" && (

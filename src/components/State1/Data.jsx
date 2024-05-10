@@ -177,6 +177,22 @@ const Data = ({ data }) => {
             </div> */}
           </>
         )}
+        {$data == "simulator" && (
+          <>
+            <div className="data__title">
+              <h2>Simulator</h2>
+            </div>
+            <p>
+              Con Simulator, llevamos la prueba de aplicativos al siguiente
+              nivel. Nuestra innovadora plataforma crea simuladores de
+              aplicativos personalizados, proporcionando un entorno de prueba
+              realista y eficiente.
+            </p>
+            <video controls className="video">
+              <source src="/simulator.mp4" />
+            </video>
+          </>
+        )}
       </div>
     </section>
   );
