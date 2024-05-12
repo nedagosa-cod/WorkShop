@@ -21,9 +21,9 @@ const State = ({ state, getData }) => {
     state2: clean,
     state3: clean,
     state4: clean,
-    state5: imgState5,
-    state6: imgState6,
-    state7: imgState7,
+    state5: clean,
+    state6: clean,
+    state7: clean,
     state8: imgState8,
   };
   return (
@@ -163,71 +163,94 @@ const State = ({ state, getData }) => {
               <ButtonState pos="appsMex" name="Aplicativos Web" />
             </div>
           </div>
-
-          <div className="checks" onClick={() => getData("checkMex")}></div>
-          <div className="voz" onClick={() => getData("vozMex")}></div>
-          <div
-            className="corrector"
-            onClick={() => getData("correctorMex")}
-          ></div>
-          <div className="scripts" onClick={() => getData("scriptsMex")}></div>
         </>
       )}
       {state == "state5" && (
         <>
-          <div
-            className="arbolCh"
-            onClick={() => getData("transferChile")}
-          ></div>
-          <div className="notasCh" onClick={() => getData("notasChile")}></div>
-          <div
-            className="calcCh"
-            onClick={() => getData("calculadoraChile")}
-          ></div>
-          <div
-            className="scriptsCh"
-            onClick={() => getData("scriptsChile")}
-          ></div>
-          <div className="faqCh" onClick={() => getData("faqChile")}></div>
+          <div className="canva" style={{ textAlign: "center" }}>
+            <div
+              className="data__title"
+              style={{ textAlign: "center", marginBottom: "30px" }}
+            >
+              <h2>InfoWeb</h2>
+              <span
+                style={{
+                  color: "#323284",
+                  fontWeight: "bold",
+                  fontSize: "20px",
+                }}
+              >
+                Telefonica Chile
+              </span>
+            </div>
+            <div className="buttons lot">
+              <ButtonState pos="transferChile" name="Arbol de transferencias" />
+              <ButtonState pos="notasChile" name="Gestor de notas" />
+              <ButtonState pos="calculadoraChile" name="Calculadora" />
+              <ButtonState pos="scriptsChile" name="Scripts" />
+              <ButtonState pos="faqChile" name="Preguntas frecuentes" />
+            </div>
+          </div>
         </>
       )}
       {state == "state6" && (
         <>
-          <div
-            className="checklistCol"
-            onClick={() => getData("checklistCol")}
-          ></div>
-          <div
-            className="tipologiasCol"
-            onClick={() => getData("tipologiasCol")}
-          ></div>
-          <div
-            className="correctorCol"
-            onClick={() => getData("correctorCol")}
-          ></div>
-          <div className="vozCol" onClick={() => getData("vozCol")}></div>
-          <div className="appsCol" onClick={() => getData("appsCol")}></div>
+          <div className="canva" style={{ textAlign: "center" }}>
+            <div
+              className="data__title"
+              style={{ textAlign: "center", marginBottom: "30px" }}
+            >
+              <h2>InfoWeb</h2>
+              <span
+                style={{
+                  color: "#323284",
+                  fontWeight: "bold",
+                  fontSize: "20px",
+                }}
+              >
+                Telefonica Colombia
+              </span>
+            </div>
+            <div className="buttons lot">
+              <ButtonState pos="checklistCol" name="Check List" />
+              <ButtonState pos="tipologiasCol" name="Buscador de tipologias" />
+              <ButtonState pos="correctorCol" name="Corrector Ortográfico" />
+              <ButtonState pos="vozCol" name="Voz a Texto" />
+              <ButtonState pos="appsCol" name="Aplicativos Web" />
+            </div>
+          </div>
         </>
       )}
       {state == "state7" && (
         <>
-          <div className="correos" onClick={() => getData("correos")}></div>
-          <div
-            className="calculadora"
-            onClick={() => getData("calculadoras")}
-          ></div>
-          <div
-            className="tipificador"
-            onClick={() => getData("tipificador")}
-          ></div>
-          <div className="catalago" onClick={() => getData("catalogo")}></div>
-          <div className="flujos" onClick={() => getData("flujos")}></div>
-          <div className="macros" onClick={() => getData("macros")}></div>
-          <div className="apps" onClick={() => getData("apps")}></div>
-          <div
-            className="segmentador"
-            onClick={() => getData("segmentador")}
-          ></div>
+          <div className="canva" style={{ textAlign: "center" }}>
+            <div
+              className="data__title"
+              style={{ textAlign: "center", marginBottom: "30px" }}
+            >
+              <h2>Coming Soon</h2>
+              <span
+                style={{
+                  color: "#323284",
+                  fontWeight: "bold",
+                  fontSize: "20px",
+                }}
+              >
+                Proximamente
+              </span>
+            </div>
+            <div className="buttons lot">
+              <ButtonState pos="correos" name="Gestor de correos" />
+              <ButtonState pos="calculadoras" name="Calculadoras" />
+              <ButtonState pos="tipificador" name="Tipificador" />
+              <ButtonState pos="catalago" name="Catálogo" />
+              <ButtonState pos="appsMex" name="Aplicativos Web" />
+              <ButtonState pos="flujos" name="Flujogramas" />
+              <ButtonState pos="macros" name="Macros" />
+              <ButtonState pos="apps" name="Aplicativos Web" />
+              <ButtonState pos="segmentador" name="Segmentador" />
+            </div>
+          </div>
         </>
       )}
       {state == "state8" && (
