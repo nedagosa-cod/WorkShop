@@ -19,8 +19,8 @@ const State = ({ state, getData }) => {
   const statesImages = {
     state1: clean,
     state2: clean,
-    state3: agiSim,
-    state4: imgState4,
+    state3: clean,
+    state4: clean,
     state5: imgState5,
     state6: imgState6,
     state7: imgState7,
@@ -139,6 +139,31 @@ const State = ({ state, getData }) => {
       )}
       {state == "state4" && (
         <>
+          <div className="canva" style={{ textAlign: "center" }}>
+            <div
+              className="data__title"
+              style={{ textAlign: "center", marginBottom: "30px" }}
+            >
+              <h2>InfoWeb</h2>
+              <span
+                style={{
+                  color: "#323284",
+                  fontWeight: "bold",
+                  fontSize: "20px",
+                }}
+              >
+                Telefonica Mexico
+              </span>
+            </div>
+            <div className="buttons lot">
+              <ButtonState pos="checkMex" name="Check List" />
+              <ButtonState pos="correctorMex" name="Corrector Ortográfico" />
+              <ButtonState pos="vozMex" name="Voz a Texto" />
+              <ButtonState pos="scriptsMex" name="Scripts" />
+              <ButtonState pos="appsMex" name="Aplicativos Web" />
+            </div>
+          </div>
+
           <div className="checks" onClick={() => getData("checkMex")}></div>
           <div className="voz" onClick={() => getData("vozMex")}></div>
           <div
