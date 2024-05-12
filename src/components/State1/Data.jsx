@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import imgClean from "/clean.png";
+import imgClean from "/clean.webp";
 import { useEffect, useState } from "react";
 
 const Data = ({ data }) => {
@@ -287,13 +287,39 @@ const Data = ({ data }) => {
               </h3>
             </div>
             <p style={{ textAlign: "center" }}>
-              Permite realizar una revisión sobre la información escrita
-              correctamente para operaciones sin paquetes de Office o alguna
-              herramienta que permita validar ortografía en línea, con el fin de
-              evitar errores de digitación en notas u otros procesos
+              Permite contar con el acceso rápido y consolidado a todos los
+              Scripts o guiones operativos con el fin de mantener los correctos
+              protocolos de llamada para efectos de calidad en la atención,
+              facilitando la gestión del asesor de manera oportuna y
+              satisfacción al cliente final.
             </p>
             <video controls className="video">
               <source src="/scriptsMex.mp4" />
+            </video>
+          </>
+        )}
+        {$data == "correos" && (
+          <>
+            <div className="data__title">
+              <h3
+                style={{
+                  textAlign: "center",
+                  color: "#323284",
+                  fontSize: "24px",
+                }}
+              >
+                Gestor de correos
+              </h3>
+            </div>
+            <p style={{ textAlign: "center" }}>
+              Herramienta enfocada en generar una respuesta dependiendo de
+              distintos factores como: el país, el estado de ánimo y sobre cual
+              producto para así entregar la respuesta correcta que el asesor
+              debe entregar, forzándolo a completar los campos relacionados con
+              los datos del asesor dando así una respuesta precisa
+            </p>
+            <video controls className="video">
+              <source src="/correos.mp4" />
             </video>
           </>
         )}
@@ -510,10 +536,11 @@ const Data = ({ data }) => {
               </h3>
             </div>
             <p style={{ textAlign: "center" }}>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam et
-              nemo ad non temporibus pariatur delectus sit ipsum, odio voluptas
-              fugiat in commodi architecto ipsam nobis corporis illo laboriosam
-              vero?
+              Permite generar notas predeterminadas sobre interacciones
+              realizadas en aplicativos, solicitudes del cliente o procesos
+              aplicados en las herramientas, por medio de campos parametrizados
+              u obligatorios que reducen el margen de error sobre las notas
+              aplicadas tanto en redacción como en estructura.
             </p>
             <video controls className="video">
               <source src="/notasCh.mp4" />
@@ -534,10 +561,12 @@ const Data = ({ data }) => {
               </h3>
             </div>
             <p style={{ textAlign: "center" }}>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam et
-              nemo ad non temporibus pariatur delectus sit ipsum, odio voluptas
-              fugiat in commodi architecto ipsam nobis corporis illo laboriosam
-              vero?
+              Permiten realizar los diferentes cálculos en la gestión de ventas,
+              cobros, ajustes, descuentos y facturación, parametrizando los
+              campos de diligenciamiento, con una visualización intuitiva de
+              fácil uso para un resultado correcto en los cálculos. No requerirá
+              hacer operaciones matemáticas en OpenOffice, calculadora del pc u
+              otras herramientas.
             </p>
             <video controls className="video">
               <source src="/calcCh.mp4" />
@@ -558,10 +587,11 @@ const Data = ({ data }) => {
               </h3>
             </div>
             <p style={{ textAlign: "center" }}>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam et
-              nemo ad non temporibus pariatur delectus sit ipsum, odio voluptas
-              fugiat in commodi architecto ipsam nobis corporis illo laboriosam
-              vero?
+              Permite contar con el acceso rápido y consolidado a todos los
+              Scripts o guiones operativos con el fin de mantener los correctos
+              protocolos de llamada para efectos de calidad en la atención,
+              facilitando la gestión del asesor de manera oportuna y
+              satisfacción al cliente final.
             </p>
             <video controls className="video">
               <source src="/scriptsCh.mp4" />
@@ -582,17 +612,18 @@ const Data = ({ data }) => {
               </h3>
             </div>
             <p style={{ textAlign: "center" }}>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam et
-              nemo ad non temporibus pariatur delectus sit ipsum, odio voluptas
-              fugiat in commodi architecto ipsam nobis corporis illo laboriosam
-              vero?
+              Permite incluir y consolidar todas las preguntas frecuentes que se
+              realizan a todo el staff por parte del personal nuevo y antiguo,
+              teniendo una sección la cual brinda respuesta a la pregunta
+              frecuente por medio de material informativo, paso a paso o
+              documentos de consulta para una respuesta rápida y de primer
+              contacto para el asesor, gestor o analista de atención.
             </p>
             <video controls className="video">
               <source src="/faqCh.mp4" />
             </video>
           </>
         )}
-
         {$data == "checklistCol" && (
           <>
             <div className="data__title">

@@ -1,4 +1,4 @@
-import imgMapa from "/salaMap.png";
+import imgMapa from "/salaMap.webp";
 const Map = ({ getState }) => {
   const handleClick = (name) => {
     getState(name);

@@ -7,10 +7,11 @@ import Data from "./components/State1/Data";
 
 function App() {
   const navigate = useNavigate();
-  const [state, setState] = useState("");
+  const [state, setState] = useState(localStorage.getItem("ws-state") || "");
   const [data, setData] = useState("");
   const getState = (state) => {
     setState(state);
+    localStorage.setItem("ws-state", state);
     navigate("/state");
   };
 

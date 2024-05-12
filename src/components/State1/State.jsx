@@ -1,22 +1,21 @@
 import { useNavigate } from "react-router-dom";
-import imgState1 from "/clean.png";
-import imgState2 from "/clean.png";
-import imgState3 from "/infoAgiSim.png";
+import clean from "/clean.webp";
+import agiSim from "/infoAgiSim.webp";
 import imgState4 from "/infoWebMexTel.png";
 import imgState5 from "/infoChile.png";
 import imgState6 from "/infoColombia.png";
 import imgState7 from "/infoComing.png";
 import imgState8 from "/infoMetaverso.png";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 const State = ({ state, getData }) => {
   const navigate = useNavigate();
   const [dataState, setDataState] = useState(state);
 
   const statesImages = {
-    state1: imgState1,
-    state2: imgState2,
-    state3: imgState3,
+    state1: clean,
+    state2: clean,
+    state3: agiSim,
     state4: imgState4,
     state5: imgState5,
     state6: imgState6,
@@ -35,7 +34,7 @@ const State = ({ state, getData }) => {
         height: "100%",
       }}
     >
-      <div className="back-btn" onClick={() => navigate(-1)}></div>
+      <div className="back-btn" onClick={() => navigate("/")}></div>
       {state == "state1" && (
         <div className="canva" style={{ textAlign: "center" }}>
           <div
