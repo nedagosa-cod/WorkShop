@@ -1,9 +1,11 @@
 import { useNavigate } from "react-router-dom";
 import imgClean from "/clean.webp";
-import { useEffect, useState } from "react";
+import { useContext, useState } from "react";
+import MapContext from "../context/MapContext";
 
-const Data = ({ data }) => {
-  const [$data, set$Data] = useState(data);
+const Data = () => {
+  const { dataScene } = useContext(MapContext);
+  const [$data, set$Data] = useState(dataScene);
   const navigate = useNavigate();
   return (
     <section

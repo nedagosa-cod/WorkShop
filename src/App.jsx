@@ -4,32 +4,27 @@ import "./index.scss";
 import State from "./components/State1/State";
 import { useState } from "react";
 import Data from "./components/State1/Data";
+import { MapProvider } from "./components/context/MapContext";
 
 function App() {
   const navigate = useNavigate();
+
   const [state, setState] = useState(localStorage.getItem("ws-state") || "");
-  const [data, setData] = useState("");
   const getState = (state) => {
     setState(state);
     localStorage.setItem("ws-state", state);
     navigate("/state");
   };
 
-  const getData = (data) => {
-    setData(data);
-    navigate("/data");
-  };
-
   return (
     <>
-      <Routes>
-        <Route path="/" element={<Map getState={getState} />} />
-        <Route
-          path="/state"
-          element={<State state={state} getData={getData} />}
-        />
-        <Route path="/data" element={<Data data={data} />} />
-      </Routes>
+      <MapProvider>
+        <Routes>
+          <Route path="/" element={<Map getState={getState} />} />
+          <Route path="/state" element={<State state={state} />} />
+          <Route path="/data" element={<Data />} />
+        </Routes>
+      </MapProvider>
     </>
   );
 }

@@ -7,11 +7,15 @@ import imgState6 from "/infoColombia.png";
 import imgState7 from "/infoComing.png";
 import imgState8 from "/infoMetaverso.png";
 import { useState } from "react";
+import ButtonState from "./ButtonState";
 
 const State = ({ state, getData }) => {
   const navigate = useNavigate();
   const [dataState, setDataState] = useState(state);
-
+  const [position, setPosition] = useState();
+  const getPos = (pos) => {
+    getData(pos);
+  };
   const statesImages = {
     state1: clean,
     state2: clean,
@@ -119,7 +123,8 @@ const State = ({ state, getData }) => {
       )}
       {state == "state3" && (
         <>
-          <div className="agile" onClick={() => getData("agile")}></div>
+          <ButtonState pos="agile" />
+          {/* <div className="agile" ></div> */}
           <div className="simulator" onClick={() => getData("simulator")}></div>
         </>
       )}
