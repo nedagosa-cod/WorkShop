@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import clean from "/clean.webp";
-import agiSim from "/infoAgiSim.webp";
+import agiSim from "/clean.webp";
 import imgState4 from "/infoWebMexTel.png";
 import imgState5 from "/infoChile.png";
 import imgState6 from "/infoColombia.png";
@@ -123,9 +123,18 @@ const State = ({ state, getData }) => {
       )}
       {state == "state3" && (
         <>
-          <ButtonState pos="agile" />
-          {/* <div className="agile" ></div> */}
-          <div className="simulator" onClick={() => getData("simulator")}></div>
+          <div className="canva" style={{ textAlign: "center" }}>
+            <div
+              className="data__title"
+              style={{ textAlign: "center", marginBottom: "30px" }}
+            >
+              <h2>Agile Training Simulator</h2>
+            </div>
+            <div className="buttons">
+              <ButtonState pos="agile" name="Agile Training" />
+              <ButtonState pos="simulator" name="Simulator" />
+            </div>
+          </div>
         </>
       )}
       {state == "state4" && (
