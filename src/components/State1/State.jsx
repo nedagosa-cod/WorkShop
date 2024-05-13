@@ -24,7 +24,7 @@ const State = ({ state, getData }) => {
     state5: clean,
     state6: clean,
     state7: clean,
-    state8: imgState8,
+    state8: clean,
   };
   return (
     <section
@@ -243,8 +243,7 @@ const State = ({ state, getData }) => {
               <ButtonState pos="correos" name="Gestor de correos" />
               <ButtonState pos="calculadoras" name="Calculadoras" />
               <ButtonState pos="tipificador" name="Tipificador" />
-              <ButtonState pos="catalago" name="Catálogo" />
-              <ButtonState pos="appsMex" name="Aplicativos Web" />
+              <ButtonState pos="catalogo" name="Catálogo" />
               <ButtonState pos="flujos" name="Flujogramas" />
               <ButtonState pos="macros" name="Macros" />
               <ButtonState pos="apps" name="Aplicativos Web" />
@@ -255,7 +254,22 @@ const State = ({ state, getData }) => {
       )}
       {state == "state8" && (
         <div className="canva">
-          <video controls className="video" style={{ marginTop: "40%" }}>
+          <div
+            className="data__title"
+            style={{ textAlign: "center", marginBottom: "30px" }}
+          >
+            <h2>Metaverso</h2>
+            <span
+              style={{
+                color: "#323284",
+                fontWeight: "bold",
+                fontSize: "20px",
+              }}
+            >
+              Formación inmersiva
+            </span>
+          </div>
+          <video controls className="video">
             <source src="/meta.mp4" />
           </video>
         </div>
