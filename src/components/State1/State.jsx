@@ -160,6 +160,8 @@ const State = ({ state, getData }) => {
               <ButtonState pos="correctorMex" name="Corrector Ortográfico" />
               <ButtonState pos="vozMex" name="Voz a Texto" />
               <ButtonState pos="scriptsMex" name="Scripts" />
+              <ButtonState pos="notasMex" name="Gestor de Notas" />
+              <ButtonState pos="calcMex" name="Calculadoras" />
               <ButtonState pos="appsMex" name="Aplicativos Web" />
             </div>
           </div>

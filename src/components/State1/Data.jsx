@@ -300,6 +300,83 @@ const Data = () => {
             </video>
           </>
         )}
+        {$data == "appsMex" && (
+          <>
+            <div className="data__title">
+              <h3
+                style={{
+                  textAlign: "center",
+                  color: "#323284",
+                  fontSize: "24px",
+                }}
+              >
+                Aplicativos Web
+              </h3>
+            </div>
+            <p style={{ textAlign: "center" }}>
+              Ingreso rápido y sencillo al total de aplicativos Web de la
+              operación o campaña, para una gestión completa con reducción en
+              los tiempos de atención. Adicional puede incluir usuarios y
+              contraseñas de herramientas o aplicativos que tengan acceso con
+              credenciales genéricas por medio de etiquetas.
+            </p>
+            <video controls className="video">
+              <source src="/appsMex.mp4" />
+            </video>
+          </>
+        )}
+        {$data == "notasMex" && (
+          <>
+            <div className="data__title">
+              <h3
+                style={{
+                  textAlign: "center",
+                  color: "#323284",
+                  fontSize: "24px",
+                }}
+              >
+                Gestor de notas
+              </h3>
+            </div>
+            <p style={{ textAlign: "center" }}>
+              Permite generar notas predeterminadas sobre interacciones
+              realizadas en aplicativos, solicitudes del cliente o procesos
+              aplicados en las herramientas, por medio de campos parametrizados
+              u obligatorios que reducen el margen de error sobre las notas
+              aplicadas tanto en redacción como en estructura.
+            </p>
+            <video controls className="video">
+              <source src="/notasMex.mp4" />
+            </video>
+          </>
+        )}
+        {$data == "calcMex" && (
+          <>
+            <div className="data__title">
+              <h3
+                style={{
+                  textAlign: "center",
+                  color: "#323284",
+                  fontSize: "24px",
+                }}
+              >
+                Calculadoras
+              </h3>
+            </div>
+            <p style={{ textAlign: "center" }}>
+              Permiten realizar los diferentes cálculos en la gestión de ventas,
+              cobros, ajustes, descuentos y facturación, parametrizando los
+              campos de diligenciamiento, con una visualización intuitiva de
+              fácil uso para un resultado correcto en los cálculos.
+            </p>
+            <video controls className="video">
+              <source src="/calcMex1.mp4" />
+            </video>
+            <video controls className="video">
+              <source src="/calcMex2.mp4" />
+            </video>
+          </>
+        )}
         {$data == "correos" && (
           <>
             <div className="data__title">
@@ -514,10 +591,9 @@ const Data = () => {
               </h3>
             </div>
             <p style={{ textAlign: "center" }}>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam et
-              nemo ad non temporibus pariatur delectus sit ipsum, odio voluptas
-              fugiat in commodi architecto ipsam nobis corporis illo laboriosam
-              vero?
+              Permite filtrar las tipologias del arbol de transferencias de
+              manera inmedita permitiendole al asesor brindar la informacion
+              necesitada de manera inmediata.
             </p>
             <video controls className="video">
               <source src="/arbolCh.mp4" />
@@ -666,10 +742,9 @@ const Data = () => {
               </h3>
             </div>
             <p style={{ textAlign: "center" }}>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam et
-              nemo ad non temporibus pariatur delectus sit ipsum, odio voluptas
-              fugiat in commodi architecto ipsam nobis corporis illo laboriosam
-              vero?
+              Permite filtrar la información por medio del buscador de la
+              infoweb usando palabras claves para encontrar la respectiva
+              tipología
             </p>
             <video controls className="video">
               <source src="/tipologiasCol.mp4" />
